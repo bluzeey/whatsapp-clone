@@ -5,7 +5,7 @@ import * as EmailValidator from "email-validator"
 import { useAuthState } from "react-firebase-hooks/auth"
 import {useCollection} from "react-firebase-hooks/firestore"
 import {auth,db} from '../firebase'
-import Chat from './Chat'
+import ChatList from './Chat'
 const Sidebar = () => {
     const[user]=useAuthState(auth)
     const userChatRef=db.collection('chats').where('users','array-contains',user.email);
@@ -27,7 +27,7 @@ const Sidebar = () => {
     return (
         <Container>
             <Header>
-            <UserAvatar onClick={()=>auth.signOut()}/>
+            <UserAvatar src={user.photoURL} onClick={()=>auth.signOut()}/>
 
             <IconsContainer>
                 <IconButton>
@@ -46,7 +46,7 @@ const Sidebar = () => {
 
             <SidebarButton onClick={createChat}>Start a New Chat</SidebarButton>
             {chatsSnapshot?.doc.map(chat=>(
-                <Chat key={chat.id} id={chat.id} user={chat.data().users}/>
+                <ChatList key={chat.id} id={chat.id} users={chat.data().users}/>
             ))}
         </Container>
     )
