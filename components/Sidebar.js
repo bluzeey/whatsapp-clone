@@ -9,7 +9,7 @@ import Chat from './Chat'
 const Sidebar = () => {
     const[user]=useAuthState(auth)
     const userChatRef=db.collection('chats').where('users','array-contains',user.email);
-    const [chatSnapshot]=useCollection(userChatRef)
+    const [chatsSnapshot]=useCollection(userChatRef)
     const CreateChat =()=>{
         const input=prompt('Please enter an email address you wish to chat with');
 
@@ -22,7 +22,7 @@ const Sidebar = () => {
         } 
     }
     const chatAlreadyExists=(recipientEmail)=>{
-        !!chatSnapshot?.docs.find((chat)=>chat.data().users.find((user)=>user===recipientEmail)?.length>0)
+        !!chatsSnapshot?.docs.find((chat)=>chat.data().users.find((user)=>user===recipientEmail)?.length>0)
     }
     return (
         <Container>
@@ -45,7 +45,7 @@ const Sidebar = () => {
             </SearchContainer>
 
             <SidebarButton onClick={createChat}>Start a New Chat</SidebarButton>
-            {chatSnapshot?.doc.map(chat=>(
+            {chatsSnapshot?.doc.map(chat=>(
                 <Chat key={chat.id} id={chat.id} user={chat.data().users}/>
             ))}
         </Container>
