@@ -3,7 +3,8 @@ import {Avatar} from '@mui/material'
 import styled from 'styled-components'
 import getRecipientEmail from '../utils/getRecipientEmail'
 import { useCollection } from 'react-firebase-hooks/firestore'
-import {auth} from '../firebase'
+import {db,auth} from '../firebase'
+import {useAuthState} from 'react-firebase-hooks/auth'
 import {useRouter} from 'next/router'
 const ChatList = ({id,users}) => {
     const router=useRouter()
@@ -23,7 +24,6 @@ const ChatList = ({id,users}) => {
             ):(
                 <UserAvatar>{recipientEmail[0]}</UserAvatar>
             )}
-            <UserAvatar/>
             <p>{recipientEmail}</p>
         </Container>
     )
@@ -43,5 +43,5 @@ const Container=styled.div`
 `;
 
 const UserAvatar=styled(Avatar)`
-margin:5px;
-margin-right:5px;`
+    margin:5px;
+    margin-right:5px;`

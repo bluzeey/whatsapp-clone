@@ -4,7 +4,7 @@ import {Button} from '@mui/material'
 import {auth,provider} from '../firebase'
 const login = () => {
     const signIn=()=>{
-        auth.signInwithPopup(provider).catch(alert)
+        auth.signInWithPopup(provider).catch(alert)
     }
     
     return (

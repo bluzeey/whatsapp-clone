@@ -44,8 +44,8 @@ const Sidebar = () => {
                 <SearchInput placeholder="Search in Chat"/>
             </SearchContainer>
 
-            <SidebarButton onClick={createChat}>Start a New Chat</SidebarButton>
-            {chatsSnapshot?.doc.map(chat=>(
+            <SidebarButton onClick={CreateChat}>Start a New Chat</SidebarButton>
+            {chatsSnapshot?.docs.map(chat=>(
                 <ChatList key={chat.id} id={chat.id} users={chat.data().users}/>
             ))}
         </Container>
