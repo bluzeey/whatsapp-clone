@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import {auth} from '../firebase'
+import {useAuthState} from 'react-firebase-hooks/auth'
 
 function Message({user, message}) {
     const [userLoggedIn]=useAuthState(auth)
