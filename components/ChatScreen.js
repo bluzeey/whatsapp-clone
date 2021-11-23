@@ -1,18 +1,20 @@
 import styled from 'styled-components'
 import {db,auth} from '../firebase'
-import {useState} from 'react'
+import {useState,useRef} from 'react'
 import {useAuthState} from 'react-firebase-hooks/auth'
 import {useRouter} from 'next/router'
 import { Avatar, IconButton } from '@mui/material'
 import {MoreVert,AttachFile, InsertEmoticon, Mic} from '@mui/icons-material'
 import {useCollection} from 'react-firebase-hooks/firestore'
 import Message from './Message'
-import firebase from 'firebase'
+import firebase from 'firebase/app'
 import getRecipientEmail from '../utils/getRecipientEmail'
 import TimeAgo from 'timeago-react'
 function ChatScreen({chat,messages}) {
+    console.log(chat, messages)
     const [user]=useAuthState(auth)
     const [input,setInput]=useState('')
+    const endofMessagesRef=useRef(null)
     const router=useRouter()
     const [messagesSnapshot]=useCollection(
         db.collection('chats')
@@ -21,9 +23,8 @@ function ChatScreen({chat,messages}) {
         .orderBy("timestamp","asc"));
     
     const [recipientSnapshot]=useCollection(
-        db.collection('users').where('email','===',getRecipientEmail(chat.users,user))
+        db.collection('users').where('email','==',getRecipientEmail(chat.users,user))
     )
-
     const showMessages=()=>{
         if(messagesSnapshot){
             return messagesSnapshot.docs.map(message=>(
@@ -41,6 +42,12 @@ function ChatScreen({chat,messages}) {
             })
         }
     }
+    const scrollToBottom=()=>{
+        endofMessagesRef.current.scrollIntoView({
+            behavior:"smooth",
+            block:"start"
+        })
+    }
     const sendMessage=(e)=>{
          e.preventDefault();
 
@@ -56,8 +63,9 @@ function ChatScreen({chat,messages}) {
          })
 
          setInput('');
+         scrollToBottom()
     }
-    const recipient=recipientSnapshot?.docs?.[0].data()
+    const recipient=recipientSnapshot?.docs?.[0]?.data()
     const recipientEmail=getRecipientEmail(chat.users,user)
     return (
         <Container>
@@ -92,7 +100,7 @@ function ChatScreen({chat,messages}) {
 
             <MessageContainer>
                 {showMessages()}
-                <EndofMessage/>
+                <EndofMessage ref={endofMessagesRef}/>
             </MessageContainer>
 
             <InputContainer>
@@ -135,7 +143,8 @@ const HeaderInformation=styled.div`
     }
     `
 
-const EndofMessage =styled.div``
+const EndofMessage =styled.div`
+ margin-bottom:50px;`
 
 const HeaderIcons=styled.div``
 
