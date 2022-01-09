@@ -135,9 +135,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - sahilm1711@gmail.com
+Your Name - [@TalkinIdeas](https://twitter.com/TalkinIdeas) - sahilm1711@gmail.com
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Project Link: [WhatsappV2](https://whatsappv2-nextjs.vercel.app/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -146,9 +146,7 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
-* []()
-* []()
+* [Sonny Sangha](https://github.com/sonnysangha)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -157,7 +155,7 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/bluzeey/whatsapp-clone/blob/master/LICENSE.txt
+[license-url]: https://github.com/bluzeey/whatsapp-clone/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/sahil-maheshwari
 [product-screenshot]: public/whatsapp.PNG
