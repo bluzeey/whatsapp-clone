@@ -30,10 +30,10 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">Whatsapp Version 2</h3>
 
   <p align="center">
-    project_description
+    This is a whatsapp clone which I have created using NextJS, React and Firebase (as the backend).
     <br />
     <a href="https://github.com/bluzeey/whatsapp-clone"><strong>Explore the docs »</strong></a>
     <br />
@@ -44,6 +44,7 @@
     ·
     <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
   </p>
+  <img src="public/whatsapp.PNG" style="height: 100px; width:100px;"/>
 </div>
 
 
@@ -77,7 +78,7 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## Whatsapp Version 2
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
@@ -188,7 +189,4 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
 [product-screenshot]: images/screenshot.png
-# Whatsapp Version 2
-<br/>
-This is a whatsapp clone which I have created using NextJS, React and Firebase (as the backend).
-<img src="public/whatsapp.PNG" style="height: 100px; width:100px;"/>
+
