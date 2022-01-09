@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div id="top"></div>
 <!--
 *** Thanks for checking out the Best-README-Template. If you have a suggestion
@@ -228,3 +229,9 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
 [product-screenshot]: images/screenshot.png
+=======
+# Whatsapp Version 2
+<br/>
+This is a whatsapp clone which I have created using NextJS, React and Firebase (as the backend).
+<img src="public/whatsapp.PNG" style="height: 100px; width:100px;"/>
+>>>>>>> beeeb4c8cfe106179834c9fe2521e8736d00977c
