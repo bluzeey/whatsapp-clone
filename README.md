@@ -154,7 +154,7 @@ Project Link: [WhatsappV2](https://whatsappv2-nextjs.vercel.app/)
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/bluzeey/whatsapp-clone/LICENSE.txt
+[license-url]: https://github.com/bluzeey/whatsapp-clone/blob/main/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/sahil-maheshwari
 [product-screenshot]: public/whatsapp.PNG
