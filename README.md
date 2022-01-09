@@ -18,8 +18,8 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
-[![MIT License][license-shield]][https://en.wikipedia.org/wiki/MIT_License]
-[![LinkedIn][linkedin-shield]][www.linkedin.com/in/sahil-maheshwari]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 
@@ -44,7 +44,6 @@
     ·
     <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
   </p>
-  <img src="public/whatsapp.PNG" style="height: 100px; width:100px;"/>
 </div>
 
 
@@ -176,17 +175,9 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
 [license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
 [license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
-[product-screenshot]: images/screenshot.png
+[linkedin-url]: https://linkedin.com/in/sahil-maheshwari
+[product-screenshot]: public/whatsapp.PNG
 
